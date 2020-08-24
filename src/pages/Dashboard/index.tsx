@@ -52,22 +52,30 @@ const Dashboard: React.FC = () => {
   async function handleUpdateFood(
     food: Omit<IFoodPlate, 'id' | 'available'>,
   ): Promise<void> {
-    const response = await api.put(`foods/${editingFood.id}`, {
-      editingFood,
-      ...food,
-    });
+    try {
+      const response = await api.put(`foods/${editingFood.id}`, {
+        editingFood,
+        ...food,
+      });
 
-    setFoods(
-      foods.map(mappedFood =>
-        mappedFood.id === editingFood.id ? { ...response.data } : mappedFood,
-      ),
-    );
+      setFoods(
+        foods.map(mappedFood =>
+          mappedFood.id === editingFood.id ? { ...response.data } : mappedFood,
+        ),
+      );
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   async function handleDeleteFood(id: number): Promise<void> {
-    await api.delete(`foods/${id}`);
+    try {
+      await api.delete(`foods/${id}`);
 
-    setFoods(foods.filter(food => food.id !== id));
+      setFoods(foods.filter(food => food.id !== id));
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   function toggleModal(): void {

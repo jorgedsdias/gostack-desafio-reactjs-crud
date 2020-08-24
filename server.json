@@ -25,12 +25,34 @@
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
     },
     {
+      "editingFood": {
+        "editingFood": {
+          "editingFood": {
+            "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+            "name": "Prato da Jaquinha",
+            "price": "20",
+            "description": "Prato da Jaquinha",
+            "available": true,
+            "id": 5
+          },
+          "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+          "name": "Prato da Jaquinha ta caro né",
+          "price": "20",
+          "description": "Prato da Jaquinha",
+          "id": 5
+        },
+        "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
+        "name": "Prato da Jaquinha ta caro né",
+        "price": "20",
+        "description": "Prato da Jaquinha",
+        "id": 5
+      },
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png",
-      "name": "Meu super prato",
-      "price": "19.90",
-      "description": "Meu super prato",
-      "available": true,
-      "id": 4
+      "name": "Prato da Jaquinha ta caro né",
+      "price": "20",
+      "description": "Prato da Jaquinha",
+      "id": 5,
+      "available": true
     }
   ]
 }
